@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="__container">
+        <aside class="__sidebar">
+            <nav class="__sidebar_nav">
+                <ul>
+                    <li>
+                        <a href="#">Chatby</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons left">crop_rotate</i>Calletana Food Truck</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons left">dashboard</i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons left">chat_bubble_outline</i> Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons left">person_outline</i> Clientes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons left">tag_faces</i> Reportes</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="material-icons left">settings</i> Ajustes</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="__sidebar_footer">
+                <div class="__user_login">
+                    <div class="__user_login_photo">
+                        <img src="images/user.png" alt="__user_login_photo" width="40">
+                    </div>
+                    <div class="__user_login_info">
+                        <p>Joyson Llapo</p>
+                        <span>Administrador comercial</span>
+                    </div>
+                </div>
+                <div class="__help">
+                    <a href="#"><i class="material-icons left">help_outline</i> Ayuda</a>
+                </div>
+            </div>
+        </aside>
+        <main class="__main">
+            <div class="__pedidos_menu">
+                <div>
+                    <h6>Pedidos</h6>
+                    <a href="#">
+                        <i class="material-icons">chat_bubble_outline</i> Todos los pedidos
+                        <span class="__badge">4</span>
+                    </a>
+                </div>
+                <div>
+                    <h6>Delivery</h6>
+                    <a href="#">
+                        <i class="material-icons">airport_shuttle</i> Express
+                        <span class="__badge">4</span>
+                    </a>
+                    <a href="#">
+                        <i class="material-icons">alarm_on</i> Programado
+                        <span class="__badge">4</span>
+                    </a>
+                </div>
+                <div>
+                    <h6>Recojo en tienda</h6>
+                    <a href="#">
+                        <i class="material-icons">airport_shuttle</i> Express
+                        <span class="__badge">4</span>
+                    </a>
+                    <a href="#">
+                        <i class="material-icons">alarm_on</i> Programado
+                        <span class="__badge">4</span>
+                    </a>
+                </div>
+            </div>
+            <div class="__pedidos_body">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pendientes-tab" data-bs-toggle="pill" data-bs-target="#pendientes" type="button" role="tab" aria-controls="pendientes" aria-selected="true">Pendientes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="confirmados-tab" data-bs-toggle="pill" data-bs-target="#confirmados" type="button" role="tab" aria-controls="confirmados" aria-selected="false">Confirmados</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="preparacion-tab" data-bs-toggle="pill" data-bs-target="#preparacion" type="button" role="tab" aria-controls="preparacion" aria-selected="false">En preparación</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="camino-tab" data-bs-toggle="pill" data-bs-target="#camino" type="button" role="tab" aria-controls="camino" aria-selected="false">En camino</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="entregados-tab" data-bs-toggle="pill" data-bs-target="#entregados" type="button" role="tab" aria-controls="entregados" aria-selected="false">Entregados</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="todos-tab" data-bs-toggle="pill" data-bs-target="#todos" type="button" role="tab" aria-controls="todos" aria-selected="false">Todos</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pendientes" role="tabpanel" aria-labelledby="pendientes-tab">1</div>
+                    <div class="tab-pane fade" id="confirmados" role="tabpanel" aria-labelledby="confirmados-tab">2</div>
+                    <div class="tab-pane fade" id="preparacion" role="tabpanel" aria-labelledby="preparacion-tab">3</div>
+                    <div class="tab-pane fade" id="camino" role="tabpanel" aria-labelledby="camino-tab">4</div>
+                    <div class="tab-pane fade" id="entregados" role="tabpanel" aria-labelledby="entregados-tab">5</div>
+                    <div class="tab-pane fade" id="todos" role="tabpanel" aria-labelledby="todos-tab">6</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/materialize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
